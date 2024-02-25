@@ -1,0 +1,15 @@
+﻿@model List<MyMvcProject.Models.Employee>
+
+<h1>Employees</h1>
+
+<ul>
+    @foreach (var employee in Model)
+    {
+        <li>
+            <strong>ID:</strong> @employee.Id <br />
+            <strong>Name:</strong> @employee.Name <br />
+            <strong>Age:</strong> @employee.Age <br />
+            <strong>Salary:</strong> @employee.Salary <br />
+        </li>
+    }
+</ul>
